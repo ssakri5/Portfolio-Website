@@ -1,0 +1,779 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffa500;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #ffa500;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.hero-section .content {
+    max-width: 700px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-section h1 span {
+    color: #ffa500;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-section .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #ffa500;
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #ffa500;
+    color: #111;
+}
+
+/* Background pattern */
+.hero-section {
+    background-image: url('../images/HerobgImage.png'); /* Use your own image */
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    font-size: 18px;  /* Increase base font size */
+}
+
+/* Navigation */
+.navbar .logo {
+    font-size: 2rem;  /* Increase logo font size */
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;  /* Increase navigation links font size */
+}
+
+/* Hero Section */
+.hero-section h1 {
+    font-size: 5rem;  /* Increase main heading font size */
+    line-height: 1.2;
+}
+
+.hero-section h1 span {
+    font-size: 5.5rem;  /* Increase highlighted name size */
+    color: #ffa500;
+}
+
+.hero-section p {
+    font-size: 2rem;  /* Increase subtitle font size */
+    margin: 20px 0;
+}
+
+.hero-section .btn {
+    font-size: 1.5rem;  /* Increase button font size */
+    padding: 15px 30px;  /* Make button larger */
+}
+
+/* Contact Section or Other Sections */
+.contact-section h2, .about-section h2, .projects-section h2 {
+    font-size: 3rem;  /* Increase section heading font size */
+}
+
+.contact-section p, .about-section p, .projects-section p {
+    font-size: 1.5rem;  /* Increase text in other sections */
+}
+
+input[type="submit"] {
+    font-size: 1.2rem;  /* Make form button text bigger */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('../images/HerobgImage.jpg'); /* Add the background image here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: left;
+    padding: 0 50px;
+    color: white;
+}
+
+/* Make sure content doesn't overflow */
+.hero-section .content {
+    max-width: 700px;
+}
+
+/* Responsive Font Sizes */
+.hero-section h1 {
+    font-size: 5rem;  /* Default large size */
+    line-height: 1.2;
+}
+
+.hero-section h1 span {
+    font-size: 5.5rem;
+    color: #ffa500;
+}
+
+.hero-section p {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.hero-section .btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: 2px solid #ffa500;
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #ffa500;
+    color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-section h1 {
+        font-size: 4rem;  /* Adjust heading size on smaller screens */
+    }
+
+    .hero-section h1 span {
+        font-size: 4.5rem;  /* Adjust name size */
+    }
+
+    .hero-section p {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;  /* Adjust heading for tablets */
+    }
+
+    .hero-section h1 span {
+        font-size: 3.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;  /* Adjust heading for mobile */
+    }
+
+    .hero-section h1 span {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+
+/* About Section */
+/* About Section */
+.about-section {
+    padding: 60px 20px; /* Responsive padding */
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 3rem; /* Title font size */
+    margin-bottom: 40px;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+}
+
+.about-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 300px; /* Updated width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: center; /* Center icon and text */
+}
+
+.about-card i {
+    font-size: 2.5rem; /* Icon size */
+    color: #ffa500; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.about-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.about-card h3 {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 10px;
+    color: #ffa500; /* Accent color */
+}
+
+.about-card p {
+    font-size: 1.5rem; /* Text font size */
+}
+
+.about-section p {
+    font-size: 1.5rem; /* Description font size */
+    max-width: 1200px; /* Limiting the width for better readability */
+    margin: 0 auto 40px; /* Centering the paragraph */
+}
+
+.about-section .btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ffa500; /* Button background color */
+    color: #111; /* Button text color */
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.about-section .btn:hover {
+    background-color: #333; /* Darker background on hover */
+    color: #ffa500; /* Change text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .about-card {
+        width: 100%; /* Full width for cards on mobile */
+        max-width: 400px; /* Increased max width for cards */
+    }
+
+    .about-section h2 {
+        font-size: 2.5rem; /* Smaller title font size on mobile */
+    }
+
+    .about-section p {
+        font-size: 1.2rem; /* Smaller description font size on mobile */
+    }
+
+    .about-section .btn {
+        font-size: 1.2rem; /* Smaller button font size on mobile */
+        padding: 10px 20px; /* Smaller padding on mobile */
+    }
+}
+
+.about-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 300px; /* Updated width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: center; /* Center icon and text */
+}
+
+
+/* Education Section */
+.education-section {
+    padding: 60px 20px; /* Responsive padding */
+    background-color: #121212; /* Dark background */
+    color: white;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 3rem; /* Title font size */
+    margin-bottom: 40px;
+    color:white; /* Accent color */
+}
+
+.education-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+}
+
+.education-card {
+    background: linear-gradient(145deg, #1e1e1e, #292929); /* Gradient background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px;
+    width: 350px; /* Default card width */
+    height: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation effect */
+}
+
+.education-card h3 {
+    margin-bottom: 10px; /* Space below the title */
+    color: #ffa500; /* Accent color */
+    font-size: 1.8rem; /* Font size for the title */
+}
+
+.education-card p {
+    font-size: 1.2rem; /* Text font size */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.education-labels{
+    font-weight: 600;
+}
+
+
+/* Hover Effect */
+.education-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .education-card {
+        width: 90%; /* Full width for cards on mobile */
+        max-width: 400px; /* Increased max width for cards */
+    }
+
+    .education-section h2 {
+        font-size: 2.5rem; /* Smaller title font size on mobile */
+    }
+}
+
+
+.skills-section {
+    padding: 60px 20px; /* Responsive padding */
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 3rem; /* Title font size */
+    margin-bottom: 40px;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+}
+
+.skills-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 600px; /* Updated width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: left; /* Left align text */
+}
+
+.skills-card i {
+    font-size: 1.5rem; /* Icon size */
+    color: #ffa500; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.skills-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.skills-card h3 {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 10px;
+    color: #ffa500; /* Accent color */
+}
+
+.skills-card ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.skills-card li {
+    font-size: 1.5rem; /* Text font size */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .skills-card {
+        width: 100%; /* Full width for cards on mobile */
+        max-width: 400px; /* Increased max width for cards */
+    }
+
+    .skills-section h2 {
+        font-size: 2.5rem; /* Smaller title font size on mobile */
+    }
+
+    .skills-card li {
+        font-size: 1.2rem; /* Smaller text font size on mobile */
+    }
+}
+
+.projects-section {
+    padding: 60px 20px; /* Responsive padding */
+    background-color: #121212; /* Black background */
+    color: white;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 3rem; /* Title font size */
+    margin-bottom: 40px;
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 800px; /* Updated width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: left; /* Left align text */
+}
+
+.project-card img {
+    width: 100%;
+    height: 58%; /* Make the image responsive */
+    border-radius: 15px; /* Rounded corners for the image */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.project-card h3 {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 10px;
+    color: #ffa500; /* Accent color */
+}
+
+.project-card p {
+    font-size: 1.5rem; /* Text font size */
+    color: #ccc; /* Slightly lighter text color */
+}
+
+.project-card .github-link {
+    display: inline-block;
+    margin-top: 10px; /* Space above the link */
+    font-size: 1.5rem; /* Font size for the link */
+    color: #ffa500; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.project-card .github-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.project-card .github-link:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .project-card {
+        width: 100%; /* Full width for cards on mobile */
+        max-width: 400px; /* Increased max width for cards */
+    }
+
+    .projects-section h2 {
+        font-size: 2.5rem; /* Smaller title font size on mobile */
+    }
+
+    .project-card p {
+        font-size: 1.2rem; /* Smaller text font size on mobile */
+    }
+
+    .project-card .github-link {
+        font-size: 1.2rem; /* Smaller link font size on mobile */
+    }
+}
+
+
+.contact-section {
+    padding: 60px 20px; /* Responsive padding */
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3rem; /* Title font size */
+    margin-bottom: 40px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 400px; /* Updated width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: center; /* Center icon and text */
+}
+
+.contact-card i {
+    font-size: 2.5rem; /* Icon size */
+    color: #ffa500; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.contact-card h3 {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 10px;
+    color: #ffa500; /* Accent color */
+}
+
+.contact-card p {
+    font-size: 1.5rem; /* Text font size */
+    color: #ccc; /* Slightly lighter text color */
+}
+
+.contact-card a {
+    color: #ffa500; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.contact-card a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .contact-card {
+        width: 100%; /* Full width for cards on mobile */
+        max-width: 400px; /* Increased max width for cards */
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem; /* Smaller title font size on mobile */
+    }
+
+    .contact-card p {
+        font-size: 1.2rem; /* Smaller text font size on mobile */
+    }
+}
+
+.footer-section {
+    background-color: #111; /* Dark background */
+    padding: 20px 0; /* Padding for top and bottom */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width of the footer content */
+    margin: 0 auto; /* Center align the footer content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Space between items */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.3rem; /* Font size */
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.footer-icon {
+    color: #ffa500; /* Icon color */
+    font-size: 2.5rem; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-icon:hover {
+    color: white; /* Change icon color on hover */
+}
+
+.footer-icon i {
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.footer-icon:hover i {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 20px; /* Padding for responsive design */
+    }
+
+    .footer-content p {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .footer-icon {
+        font-size: 1.2rem; /* Smaller icon size on mobile */
+    }
+}
+
