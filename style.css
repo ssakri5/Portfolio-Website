@@ -94,7 +94,7 @@ body {
 
 /* Background pattern */
 .hero-section {
-    background-image: url('../images/HerobgImage.png'); /* Use your own image */
+    background-image: url('./images/HerobgImage.png'); /* Use your own image */
     background-size: cover;
     background-position: center;
 }
@@ -169,7 +169,7 @@ input[type="submit"] {
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background-image: url('../images/HerobgImage.jpg'); /* Add the background image here */
+    background-image: url('./images/HerobgImage.jpg'); /* Add the background image here */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the background image */
     background-attachment: fixed; /* Keeps the image fixed when scrolling */
