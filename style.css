@@ -94,7 +94,7 @@ body {
 
 /* Background pattern */
 .hero-section {
-    background-image: url('./img/HerobgImage.png'); /* Use your own image */
+    background-image: url('./img/HerobgImage.jpg'); /* Use your own image */
     background-size: cover;
     background-position: center;
 }
